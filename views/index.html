@@ -126,7 +126,7 @@
                 mengetahui atau memiliki riwayat bisa dicoba untuk mengisi
                 setiap kolom yang dibutuhkan.
               </p>
-              <a href="#about" class="btn-get-started scrollto">Read More</a>
+              <a href="#about" class="btn-get-started scrollto">About Us</a>
             </div>
           </div>
 
@@ -269,7 +269,7 @@
           >
             <div class="row">
               <div class="col-md-4 form-group">
-                <label for="age" class="form-label">Usia :</label>
+                <label for="age" class="form-label fw-bold">Berapa Usia Anda ?</label>
                 <input
                   type="number"
                   name="age"
@@ -280,21 +280,16 @@
                 />
               </div>
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <label for="anaemia" class="form-label"
-                  >Anemia :</label
-                >
-                <input
-                  type="number"
-                  class="form-control"
-                  name="anaemia"
-                  id="anaemia"
-                  placeholder="Masukkan Hasil Tes Anemia Anda"
-                  required
-                />
+                <label for="anaemia" class="form-label fw-bold">Apakah Anda Terindikasi Anaemia ?</label>
+                <select name="anaemia" id="anaemia" class="form-select" required>
+                  <option value="">Iya atau Tidak </option>
+                  <option value="0">Tidak</option>
+                  <option value="1">Iya</option>
+                </select>
               </div>
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <label for="creatinine_phosphokinase" class="form-label"
-                  >Tes CPK :</label
+                <label for="creatinine_phosphokinase" class="form-label fw-bold"
+                  >Berapa Hasil Tes CPK Anda ?</label
                 >
                 <input
                   type="number"
@@ -308,22 +303,16 @@
             </div>
             <div class="row">
               <div class="col-md-4 form-group">
-                <label for="diabetes" class="form-label"
-                  >Hasil Tes Diabetes anda :</label
-                >
-                <input
-                  type="number"
-                  name="diabetes"
-                  class="form-control"
-                  id="diabetes"
-                  placeholder="Masukkan Hasil Tes Diabetes Anda"
-                  required
-                />
+                <label for="diabetes" class="form-label fw-bold">Apakah Anda Terindikasi Diabetes ?</label>
+                <select name="diabetes" id="diabetes" class="form-select" required>
+                  <option value="">Iya atau Tidak </option>
+                  <option value="0">Tidak</option>
+                  <option value="1">Iya</option>
+                </select>
               </div>
               <div class="col-md-4 form-group">
-                <label for="ejection_fraction" class="form-label"
-                  >Persentase darah yang meninggalkan jantung pada setiap
-                  kontraksi (EF) :</label
+                <label for="ejection_fraction" class="form-label fw-bold"
+                  >Berapa Persetase darah (EF) Anda ?</label
                 >
                 <input
                   type="number"
@@ -335,24 +324,19 @@
                 />
               </div>
               <div class="col-md-4 form-group">
-                <label for="high_blood_pressure" class="form-label"
-                  >Darah Tinggi :</label
-                >
-                <input
-                  type="number"
-                  name="high_blood_pressure"
-                  class="form-control"
-                  id="high_blood_pressure"
-                  placeholder="Masukkan Darah Tinggi"
-                  required
-                />
+                <label for="high_blood_pressure" class="form-label fw-bold">Apakah Anda Terindikasi Darah Tinggi ?</label>
+                <select name="high_blood_pressure" id="high_blood_pressure" class="form-select" required>
+                  <option value="">Iya atau Tidak </option>
+                  <option value="0">Tidak</option>
+                  <option value="1">Iya</option>
+                </select>
               </div>
               
             </div>
             <div class="row">
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <label for="platelets" class="form-label"
-                  >Jumlah Trombosit Anda :</label
+                <label for="platelets" class="form-label fw-bold"
+                  >Berapa jumlah Trombosit Anda ?</label
                 >
                 <input
                   type="number"
@@ -364,9 +348,7 @@
                 />
               </div>
               <div class="col-md-4 form-group">
-                <label for="serum_creatinine" class="form-label"
-                  >Tingkat kreatinina serum dalam darah :</label
-                >
+                <label for="serum_creatinine" class="form-label fw-bold">Berapa kreatinina serum dalam darah anda?</label>
                 <input
                   type="number"
                   name="serum_creatinine"
@@ -377,8 +359,8 @@
                 />
               </div>
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <label for="serum_sodium" class="form-label"
-                  >Tingkat natrium serum dalam darah :</label
+                <label for="serum_sodium" class="form-label fw-bold"
+                  >Berapa tingkat natrium serum dalam darah anda?</label
                 >
                 <input
                   type="number"
@@ -390,7 +372,7 @@
                 />
               </div>
               <div class="col-md-4 form-group">
-                <label for="sex" class="form-label">Jenis Kelamin :</label>
+                <label for="sex" class="form-label fw-bold">Jenis Kelamin :</label>
                 <select name="sex" id="sex" class="form-select" required>
                   <option value="">Select Jenis Kelamin</option>
                   <option value="0">Perempuan</option>
@@ -398,15 +380,15 @@
                 </select>
               </div>
               <div class="col-md-4 form-group">
-                <label for="smoking" class="form-label">Merokok :</label>
+                <label for="smoking" class="form-label fw-bold">Apakah Anda Merokok ?</label>
                 <select name="smoking" id="smoking" class="form-select" required>
-                  <option value="">Select Jenis Kelamin</option>
+                  <option value="">Merokok atau Tidak</option>
                   <option value="0">Tidak Merokok</option>
                   <option value="1">Merokok</option>
                 </select>
               </div>
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <label for="time" class="form-label"
+                <label for="time" class="form-label fw-bold"
                   >Periode Tindak Lanjut :</label
                 >
                 <input
@@ -435,49 +417,18 @@
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>About Us</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
           </div>
 
           <div class="row">
-            <div class="col-lg-6" data-aos="fade-right">
-              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+            <div class="col-md-3" data-aos="fade-right">
+              <img src="{{ url_for('static', filename='assets/img/aboutus.jpg') }}" class="img-thumbnail" alt="" />
             </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <div class="pl-md-4 col-md-6 content" data-aos="fade-left">
               <h3>
-                Voluptatem dignissimos provident quasi corporis voluptates sit
-                assumenda.
+                Calvin Nickholas Kurniawan - 4611420034
               </h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <ul>
-                <li>
-                  <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat.
-                </li>
-                <li>
-                  <i class="bi bi-check-circle"></i> Duis aute irure dolor in
-                  reprehenderit in voluptate velit.
-                </li>
-                <li>
-                  <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit in voluptate trideta storacalaperda mastiro
-                  dolore eu fugiat nulla pariatur.
-                </li>
-              </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
+                "Greetings, and welcome to my website! I make this website. I am currently studying at Semarang State University, my goal in creating this website is to complete my thesis by diagnosing heart failure. "
               </p>
             </div>
           </div>
